@@ -4,19 +4,8 @@ p{
 }
 #del,#delete{
   font-size: 20px;
-  float: right;
+  float: left;
   margin-right: 10%;
-}
-#like{
-  font-size: 20px;
-}
-#dislike{
-  font-size: 20px;
-}
-.hate{
-  margin-left: 10px;
-  background-color: brown;
-  color: white;
 }
 hr{
   background-color: white;
