@@ -5,17 +5,17 @@
 <hr>
 </div>
 <div class="container overlay">
-  <div style="text-align:center;color: black">
-    <div>
-      <h2>Programs in diary.</h2>
-    </div>
-    
-  </div>
   <div class="row">
     <div class="col-sm-4">
       <app-diary-form (addItem)="newDiaryEntry($event)"></app-diary-form>
     </div>
     <div class="col-sm-7 entries">
+      <div style="text-align:center;color: black">
+        <div>
+          <h2>Programs in diary.</h2>
+        </div>
+        
+      </div>
       <div *ngFor="let diary of diaries let i = index">
         <div class="card">
           <div class="card-body">
