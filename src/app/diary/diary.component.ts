@@ -13,7 +13,11 @@ export class DiaryComponent implements OnInit {
    new Diary (1,'Childrens home visit','Go to visit langata childrens home',new Date(2020,6,12)),
    new Diary (2,'Check-up','Go to the hospital for a check-up',new Date(2020,7,14)),
    new Diary (3,'Work-out','Go to the gym for monthly work-out',new Date(2020,6,10)),
-   new Diary (4,'Graduation','Finally graduate from Moringa Core',new Date(2020,8,9)),  
+   new Diary (4,'Graduation','Finally graduate from Moringa Core',new Date(2020,8,9)),
+   new Diary (5,'Childrens home visit','Go to visit langata childrens home',new Date(2020,6,12)),
+   new Diary (6,'Check-up','Go to the hospital for a check-up',new Date(2020,7,14)),
+   new Diary (7,'Work-out','Go to the gym for monthly work-out',new Date(2020,6,10)),
+   new Diary (8,'Graduation','Finally graduate from Moringa Core',new Date(2020,8,9)),  
   ];
   newDiaryEntry(item){
     let goalLength = this.diaries.length;

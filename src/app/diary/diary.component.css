@@ -5,13 +5,24 @@
   border: 1px solid white;
   padding-top: 2%;
   padding-bottom: 2%;
+  margin-left: 5%;
 }
 .overlay1{
-  background-color: black;
+  background-color: rgba(202, 193, 193, 0.8);
   margin-top:0.5%;
-  color: white;
+  color: black;
   border: 1px solid white;
   padding-top: 2%;
+}
+.overlay2{
+  background-color: rgba(202, 193, 193, 0.8);
+  margin-top:2.7%;
+  color: black;
+  border: 1px solid white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  margin-bottom: 2.7%;
 }
 hr{
   background-color: teal;
@@ -19,9 +30,9 @@ hr{
 }
 
 .card{
-  background-color: black;
+  background-color:rgba(202, 193, 193, 0.8);
   margin-bottom: 2%;
-  color: white;
+  color: black;
 }
 #date{
   float:right;
