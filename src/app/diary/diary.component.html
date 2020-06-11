@@ -4,10 +4,12 @@
 </h1>
 <hr>
 </div>
-<div class="container overlay">
+
   <div class="row">
     <div class="col-sm-4">
+      <div class="container overlay">
       <app-diary-form (addItem)="newDiaryEntry($event)"></app-diary-form>
+      </div>
     </div>
     <div class="col-sm-7 entries">
       <div style="text-align:center;color: black">
@@ -32,4 +34,3 @@
         
     </div>
   </div>
-</div>

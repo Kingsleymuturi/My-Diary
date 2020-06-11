@@ -21,6 +21,7 @@ hr{
 .card{
   background-color: black;
   margin-bottom: 2%;
+  color: white;
 }
 #date{
   float:right;
