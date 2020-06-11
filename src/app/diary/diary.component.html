@@ -15,7 +15,8 @@
     <div class="col-sm-4">
       <app-diary-form (addItem)="newDiaryEntry($event)"></app-diary-form>
     </div>
-    <div class="col-sm-7 entries" ngFor="let diary of diaries">
+    <div class="col-sm-7 entries">
+      <div *ngFor="let diary of diaries let i = index">
         <div class="card">
           <div class="card-body">
               <h4>{{diary.name}} <span id="date">{{diary.createdOn|date}}</span></h4>
@@ -25,6 +26,7 @@
             <button class="btn btn-info btn-sm" (click)='toggle(i)'>Details</button>
           </div>
         </div>
+      </div>
     </div>
     <div class="col-sm-1">
         
