@@ -1,0 +1,33 @@
+<div class="container overlay1">
+<h1 style="text-align: center;">
+{{ title | titlecase}} app!
+</h1>
+<hr>
+</div>
+<div class="container overlay">
+  <div style="text-align:center;color: black">
+    <div>
+      <h2>Programs in diary.</h2>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <app-diary-form (addItem)="newDiaryEntry($event)"></app-diary-form>
+    </div>
+    <div class="col-sm-7 entries" ngFor="let diary of diaries">
+        <div class="card">
+          <div class="card-body">
+              <h4>{{diary.name}} <span id="date">{{diary.createdOn|date}}</span></h4>
+              <app-diary-details *ngIf = 'diary.displayInfo' [diary]='diary' (isComplete) = 'deleteItem($event,i)'></app-diary-details>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-info btn-sm" (click)='toggle(i)'>Details</button>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-1">
+        
+    </div>
+  </div>
+</div>

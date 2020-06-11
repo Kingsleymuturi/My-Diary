@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <h4>Add Program To Your Diary</h4>
+  <form (ngSubmit)='saveEntry()' #diariesForm='ngForm'>
+    <div class="form-group">
+      <label for="topic">Topic</label>
+      <input type="text" class="form-control" id="topic" placeholder="Enter Topic here..." [(ngModel)]='newEntry.name' #name='ngModel' name="name" required minlength="4">
+      <div *ngIf="name.invalid && name.dirty"
+        class="alert alert-danger">
+        <div *ngIf="name.errors.required">
+            Name is required.
+        </div>
+        <div *ngIf="name.errors.minlength">
+          Name must be at least 4 characters long.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="description" rows="5" placeholder="Describe your topic in Detail...." [(ngModel)]='newEntry.description' #description='ngModel' name="description" required></textarea>
+      <div *ngIf="description.invalid && description.dirty"
+      class="alert alert-danger">
+      <div *ngIf="description.errors.required">
+          Description is required...
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="date">Entry Date</label>
+      <input type="date" class="form-control"  id="date">
+    </div>
+    <button class="btn btn-md save">Save Entry</button>
+  </form>
+</div>
